@@ -15,7 +15,7 @@
     {% endif %}
 
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
-      <div class="archive__item">
+      <div class="archive__item text-center">
         {% if f.image_path %}
           <div class="archive__item-teaser">
             <img src=
@@ -27,12 +27,15 @@
             alt="{% if f.alt %}{{ f.alt }}{% endif %}">
           </div>
         {% endif %}
-
         <div class="archive__item-body">
+        {% if f.fa_font %}
+          <div class="text-center">
+            <i class="fa {{f.fa_font}} fa_feature_row" aria-hidden="true"></i>
+          </div>
+        {% endif %}
           {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+            <h2 class="archive__item-title text-center">{{ f.title }}</h2>
           {% endif %}
-
           {% if f.excerpt %}
             <div class="archive__item-excerpt">
               {{ f.excerpt | markdownify }}
@@ -40,7 +43,7 @@
           {% endif %}
 
           {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}" target="_blank">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>
