@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Citychrone project"
+title                    : "CityChrone project"
 title_separator          : "-"
 name                     : "Citychrone"
 description              : "information on the Citychrone project."
@@ -190,6 +190,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  
 
 
 # Outputting
