@@ -10,3 +10,32 @@
 .fa_feature_row {
 	font-size : 1.5em;
 };		
+
+.orangeC {
+	color : #f16913;
+}
+
+.blueN {
+	color : #2171b5;
+}
+
+.greenC {
+	color : #31a354;
+}
+
+
+.page__hero--overlay .page__title {
+	color : #847e7e;
+	text-shadow : -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white; 
+}
+
+.page__hero--overlay .page__lead {
+	color : #847e7e;
+	text-shadow : -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; 
+}
+
+.page__hero--overlay a {
+	color : #847e7e;
+	text-shadow : -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; 
+	background-color : rgba(255, 255, 255, 0.5);;
+}
